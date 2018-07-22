@@ -45,6 +45,73 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 1610612736
 BOARD_CACHEIMAGE_PARTITION_SIZE := 419430400
 BOARD_FLASH_BLOCK_SIZE := 131072
 
+# Bluetooth
+BOARD_HAVE_BLUETOOTH := true
+
+# Boot animation
+TARGET_BOOTANIMATION_MULTITHREAD_DECODE := true
+
+# Camera
+USE_CAMERA_STUB := true
+
+# Charger
+BACKLIGHT_PATH := /sys/class/leds/lcd-backlight/brightness
+
+# Common Properties
+TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system.prop
+
+# Cyanogenmod H/W Hooks
+BOARD_USES_CYANOGEN_HARDWARE := true
+BOARD_HARDWARE_CLASS := $(LOCAL_PATH)/cmhw
+
+# Dalvik Tweak
+PRODUCT_TAGS += dalvik.gc.type-precise
+
+# Dexpreopt
+WITH_DEXPREOPT := true
+DONT_DEXPREOPT_PREBUILTS := true
+
+# Disable memcpy opt (for audio libraries)
+TARGET_CPU_MEMCPY_OPT_DISABLE := true
+
+# Display
+USE_OPENGL_RENDERER := true
+TARGET_FORCE_HWC_FOR_VIRTUAL_DISPLAYS := true
+NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
+TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := true
+
+# Enable Minikin text layout engine (will be the default soon)
+USE_MINIKIN := true
+
+# Fonts
+EXTENDED_FONT_FOOTPRINT := true
+
+# Light HAL
+TARGET_PROVIDES_LIBLIGHT := true
+
+# MTK Hardware
+BOARD_USES_MTK_HARDWARE := true
+
+# RIL
+BOARD_RIL_CLASS := ../../../$(LOCAL_PATH)/ril
+
+# Seccomp filter
+BOARD_SECCOMP_POLICY := $(LOCAL_PATH)/seccomp
+
+# SELinux
+BOARD_SEPOLICY_DIRS := $(LOCAL_PATH)/sepolicy
+
+# Wifi
+WPA_SUPPLICANT_VERSION := VER_0_8_X
+BOARD_HOSTAPD_DRIVER := NL80211
+BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_mt66xx
+BOARD_WPA_SUPPLICANT_DRIVER := NL80211
+BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_mt66xx
+WIFI_DRIVER_FW_PATH_PARAM := /dev/wmtWifi
+WIFI_DRIVER_FW_PATH_AP := AP
+WIFI_DRIVER_FW_PATH_STA := STA
+WIFI_DRIVER_FW_PATH_P2P := P2P
+
 # Recovery
 BOARD_HAS_NO_SELECT_BUTTON := true
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/fstab.mt6735
