@@ -1,6 +1,15 @@
 #
-# system.prop for mt6737-common
+# system.prop for infinity
 #
+
+# LCD density
+ro.sf.lcd_density=160
+
+# Hardware rotation
+ro.sf.hwrotation=180
+
+# Enable on-screen keys (temporary)
+qemu.hw.mainkeys=0
 
 # DRM
 drm.service.enabled=true
