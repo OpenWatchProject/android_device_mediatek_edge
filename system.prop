@@ -9,7 +9,7 @@ ro.sf.lcd_density=160
 ro.sf.hwrotation=180
 
 # Enable on-screen keys (temporary)
-qemu.hw.mainkeys=0
+qemu.hw.mainkeys=1
 
 # DRM
 drm.service.enabled=true
