@@ -58,11 +58,11 @@ USE_CAMERA_STUB := true
 BACKLIGHT_PATH := /sys/class/leds/lcd-backlight/brightness
 
 # Common Properties
-TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system.prop
+TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
 
 # Cyanogenmod H/W Hooks
 BOARD_USES_CYANOGEN_HARDWARE := true
-BOARD_HARDWARE_CLASS := $(LOCAL_PATH)/cmhw
+BOARD_HARDWARE_CLASS := $(DEVICE_PATH)/cmhw
 
 # Dalvik Tweak
 PRODUCT_TAGS += dalvik.gc.type-precise
@@ -93,13 +93,13 @@ TARGET_PROVIDES_LIBLIGHT := true
 BOARD_USES_MTK_HARDWARE := true
 
 # RIL
-BOARD_RIL_CLASS := ../../../$(LOCAL_PATH)/ril
+BOARD_RIL_CLASS := ../../../$(DEVICE_PATH)/ril
 
 # Seccomp filter
-BOARD_SECCOMP_POLICY := $(LOCAL_PATH)/seccomp
+BOARD_SECCOMP_POLICY := $(DEVICE_PATH)/seccomp
 
 # SELinux
-BOARD_SEPOLICY_DIRS := $(LOCAL_PATH)/sepolicy
+BOARD_SEPOLICY_DIRS := $(DEVICE_PATH)/sepolicy
 
 # Wifi
 WPA_SUPPLICANT_VERSION := VER_0_8_X
