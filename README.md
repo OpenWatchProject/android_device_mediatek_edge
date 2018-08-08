@@ -1,4 +1,4 @@
-Device Tree for MediaTek Infinity (LEMFO LEM7 & Thor 4 LTE)
+Device Tree for MediaTek Infinity (LEMFO LEM7, Thor 4 LTE, IQI I7 & IQI I8)
 ===========================================
 
 Basic   | Spec Sheet
