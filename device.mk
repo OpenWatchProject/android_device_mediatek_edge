@@ -152,6 +152,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     com.android.future.usb.accessory
 
+# Watch specific settings
+PRODUCT_PACKAGES += \
+    WatchSettings
+
 # Wifi
 PRODUCT_PACKAGES += \
     libwpa_client \
