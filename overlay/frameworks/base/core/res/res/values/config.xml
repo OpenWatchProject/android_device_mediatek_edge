@@ -256,4 +256,6 @@
 
     <bool name="config_windowIsRound">true</bool>
 
+    <bool name="config_animateScreenLights">false</bool>
+
 </resources>
