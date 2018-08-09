@@ -9,7 +9,6 @@ LOCAL_PATH := device/mediatek/infinity
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
-
 # Assert
 TARGET_OTA_ASSERT_DEVICE := infinity
 
@@ -170,9 +169,6 @@ PRODUCT_COPY_FILES += \
 
 # Dalvik heap configurations
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
-
-# Call hwui memory config
-$(call inherit-product-if-exists, frameworks/native/build/phone-xhdpi-1024-hwui-memory.mk)
 
 # Vendor
 $(call inherit-product, vendor/mediatek/infinity/infinity-vendor.mk)
