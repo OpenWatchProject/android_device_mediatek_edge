@@ -130,4 +130,4 @@ $(shell mkdir -p $(OUT)/obj/KERNEL_OBJ/usr)
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/zImage
 
 # Inherit from the proprietary version
--include vendor/xiaomi/mido/BoardConfigVendor.mk
+-include vendor/mediatek/infinity/BoardConfigVendor.mk
