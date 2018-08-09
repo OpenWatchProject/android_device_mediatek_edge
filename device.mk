@@ -153,8 +153,8 @@ PRODUCT_PACKAGES += \
     com.android.future.usb.accessory
 
 # Watch specific settings
-PRODUCT_PACKAGES += \
-    WatchSettings
+#PRODUCT_PACKAGES += \
+#    WatchSettings
 
 # Wifi
 PRODUCT_PACKAGES += \
@@ -176,4 +176,4 @@ $(call inherit-product-if-exists, frameworks/native/build/phone-xhdpi-1024-hwui-
 
 # Vendor
 $(call inherit-product, vendor/mediatek/infinity/infinity-vendor.mk)
-$(call inherit-product, vendor/watch/config/common_nougat.mk)
+#$(call inherit-product, vendor/watch/config/common_nougat.mk)
