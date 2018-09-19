@@ -3,19 +3,24 @@
 /dev/block/mmcblk0boot0                                         0660    root    system
 /dev/block/mmcblk0boot1                                         0660    root    system
 /dev/misc-sd                                                    0660    root    system
-/dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/misc2     0660    root    system
-/dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/boot      0640    root    system
-/dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/recovery  0640    root    system
-/dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/secro     0640    root    system
-/dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/seccfg    0660    root    system
-/dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/proinfo   0660    root    system
-/dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/nvram     0660    root    system
-/dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/para      0660    root    system
-/dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/logo      0660    root    system
-/dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/frp       0660    root    system
+/dev/block/platform/bootdevice/by-name/misc2     0660    root    system
+/dev/block/platform/bootdevice/by-name/boot      0640    root    system
+/dev/block/platform/bootdevice/by-name/recovery  0640    root    system
+/dev/block/platform/bootdevice/by-name/secro     0640    root    system
+/dev/block/platform/bootdevice/by-name/seccfg    0660    root    system
+/dev/block/platform/bootdevice/by-name/proinfo   0660    root    system
+/dev/block/platform/bootdevice/by-name/nvram     0660    root    system
+/dev/block/platform/bootdevice/by-name/para      0660    root    system
+/dev/block/platform/bootdevice/by-name/logo      0660    root    system
+/dev/block/platform/bootdevice/by-name/frp       0660    root    system
+/dev/block/platform/bootdevice/by-name/md1img    0660    root    system
+/dev/block/platform/bootdevice/by-name/md1dsp    0660    root    system
+/dev/block/platform/bootdevice/by-name/md1arm7   0660    root    system
+/dev/block/platform/bootdevice/by-name/md3img    0660    root    system
 
 # OTP
-/dev/otp                 0660 system system
+/dev/otp                  0660   system     system
+/dev/block/platform/bootdevice/by-name/otp       0660    root    system
 
 # Connectivity
 /dev/stpwmt               0660   system     system
@@ -40,12 +45,18 @@
 # NFC
 /dev/msr3110              0666   root       root
 /dev/mt6605               0660   nfc        radio
+/dev/st21nfc              0660   nfc        radio
 
 # MTK BTIF driver
 /dev/btif                 0600   system     system
 
 # Trusty driver
 /dev/trusty-ipc-dev0      0660   system     keystore
+
+# TrustonicTEE driver
+/dev/mobicore             0600   system     system
+/dev/mobicore-user        0666   system     system
+/dev/t-base-tui           0666   system     system
 
 # add the read write right of ttyUSB*
 /dev/bus/usb/*     	  0660   root       usb
@@ -70,10 +81,12 @@
 /dev/ccci_pcm_tx          0660   audio      audio
 /dev/ccci_aud             0660   audio      audio
 /dev/ccci2_aud            0660   audio      audio
+/dev/ccci3_aud            0660   audio      audio
+/dev/ccci_raw_audio       0660   audio      audio
+/dev/ccci3_raw_audio      0660   audio      audio
 /dev/eemcs_aud            0660   audio      audio
 /dev/irtx                 0660   system     system
 /dev/ir-learning          0660   system     system
-
 # SGX device node
 /dev/pvrsrvkm             0666   root       root
 /dev/pvr_sync             0666   root       root
