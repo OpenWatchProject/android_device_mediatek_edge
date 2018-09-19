@@ -18,7 +18,7 @@
 
 set -e
 
-DEVICE=infinity
+DEVICE=edge
 VENDOR=mediatek
 
 # Load extract_utils and do some sanity checks

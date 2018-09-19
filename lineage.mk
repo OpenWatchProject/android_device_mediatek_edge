@@ -14,12 +14,12 @@
 # limitations under the License.
 #
 
-$(call inherit-product, device/mediatek/infinity/full_infinity.mk)
+$(call inherit-product, device/mediatek/edge/full_edge.mk)
 
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_infinity
+PRODUCT_NAME := lineage_edge
 BOARD_VENDOR := MediaTek
 
 PRODUCT_GMS_CLIENTID_BASE := android-mediatek

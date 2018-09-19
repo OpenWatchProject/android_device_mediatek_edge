@@ -16,7 +16,7 @@
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
-$(call inherit-product, vendor/mediatek/infinity/infinity-vendor.mk)
+$(call inherit-product, vendor/mediatek/edge/edge-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
@@ -30,7 +30,7 @@ TARGET_SCREEN_HEIGHT := 400
 TARGET_SCREEN_WIDTH := 400
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := infinity
+TARGET_OTA_ASSERT_DEVICE := edge
 
 # Audio
 PRODUCT_PACKAGES += \

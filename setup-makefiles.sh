@@ -18,7 +18,7 @@
 
 set -e
 
-DEVICE=infinity
+DEVICE=edge
 VENDOR=mediatek
 
 INITIAL_COPYRIGHT_YEAR=2017

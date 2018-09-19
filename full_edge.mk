@@ -18,13 +18,13 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from infinity device
-$(call inherit-product, device/mediatek/infinity/device.mk)
+# Inherit from edge device
+$(call inherit-product, device/mediatek/edge/device.mk)
 
 # Device identifier. This must come after all inclusions
 TARGET_VENDOR := MediaTek
-PRODUCT_DEVICE := infinity
-PRODUCT_NAME := full_infinity
+PRODUCT_DEVICE := edge
+PRODUCT_NAME := full_edge
 PRODUCT_BRAND := MediaTek
-PRODUCT_MODEL := Infinity
+PRODUCT_MODEL := Edge
 PRODUCT_MANUFACTURER := MediaTek
